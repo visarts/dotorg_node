@@ -1,3 +1,5 @@
 const routes = require('./main_routes')
 
-console.log(routes)
+module.exports = function (app, db) {
+  routes(app, db)
+}
