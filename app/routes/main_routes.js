@@ -7,6 +7,16 @@ module.exports = function (app, db) {
     res.send('<h1 style="color: #56a; font: bold 2em sans-serif;">its a GET call</h1>')
   })
 
+  app.get('/all', (req, res) => {
+    db.collection(collectionName).find().toArray((err, result) => {
+      if (err) {
+        res.send({ error: err })
+      } else {
+        res.send(result)
+      }
+    })
+  })
+
   app.post('/post', (req, res) => {
     const artist = { name: req.body.name, longName: req.body.longName }
     db.collection(collectionName).insert(artist, (err, result) => {

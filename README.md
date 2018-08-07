@@ -3,13 +3,16 @@ Backend nodeJS setup for the frontend dotorg project
 
 ## API
 
+### GET (all)
+https://portitude.herokuapp.com/all
+
 ### GET, PUT, UPDATE
-https://cryptic-earth-89990.herokuapp.com/artists/<artist_ID>
+https://portitude.herokuapp.com/artists/<artist_ID>
 
 ### POST
-https://cryptic-earth-89990.herokuapp.com/post
+https://portitude.herokuapp.com/post
 
-Body: 
+body: 
 ```
 {
   name: 'string',
