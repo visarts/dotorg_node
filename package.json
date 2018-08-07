@@ -2,9 +2,9 @@
   "name": "dotorg_node",
   "version": "0.0.1",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
