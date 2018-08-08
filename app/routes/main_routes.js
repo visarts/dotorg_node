@@ -8,7 +8,7 @@ module.exports = function (app, db) {
     res.render('../views/main.jsx')
   })
 
-  app.get('/all', (req, res) => {
+  app.get('/artists/all', (req, res) => {
     db.collection(collectionName).find().toArray((err, result) => {
       if (err) {
         res.send({ error: err })
@@ -18,7 +18,7 @@ module.exports = function (app, db) {
     })
   })
 
-  app.post('/post', (req, res) => {
+  app.post('/artists/post', (req, res) => {
     const artist = { name: req.body.name, longName: req.body.longName }
     db.collection(collectionName).insert(artist, (err, result) => {
       if (err) {

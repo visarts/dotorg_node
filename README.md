@@ -12,15 +12,15 @@ https://portitude.herokuapp.com/
 ## API
 
 ### GET (all)
-https://portitude.herokuapp.com/all
+https://portitude.herokuapp.com/artists/all
 
 ### GET, PUT, UPDATE
 https://portitude.herokuapp.com/artists/<artist_ID>
 
 ### POST
-https://portitude.herokuapp.com/post
+https://portitude.herokuapp.com/artists/post
 
-body: 
+#### body: 
 ```
 {
   name: 'string',
