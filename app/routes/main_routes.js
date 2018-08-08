@@ -4,7 +4,8 @@ const collectionName = 'artists'
 
 module.exports = function (app, db) {
   app.get('/', (req, res) => {
-    res.send('<h1 style="color: #56a; font: bold 2em sans-serif;">its a GET call</h1>')
+    // can only render when a render engine is set (in the index.js app config)
+    res.render('../views/main.jsx')
   })
 
   app.get('/all', (req, res) => {
